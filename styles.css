@@ -1,0 +1,255 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #fff, #f3e6ff);
+  text-align: center;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 15px 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+.nav-links a:hover {
+  background: #e0e0e0;
+  border-radius: 5px;
+}
+
+.btn {
+  background: #6c5ce7;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #5a4ec7;
+}
+
+.hamburger {
+  font-size: 30px;
+  display: none;
+  cursor: pointer;
+}
+
+/* Responsive Navbar */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: white;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/* Hero Section */
+.hero {
+  padding: 60px 20px;
+  height: 50vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0)
+    ),
+    url("gradient.png") no-repeat center;
+  background-size: cover;
+}
+
+.hero h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+.committees {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    flex-wrap: wrap; /* Ensures responsiveness */
+  }
+  
+  .committee-card {
+    background: white;
+    padding: 40px; /* Increased padding */
+    border-radius: 15px; /* Slightly more rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+    width: 400px; /* Increased width */
+    text-align: center; /* Centering content */
+    overflow: hidden; /* Prevents any overflow */
+  }
+  
+  .committee-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .committee-card img {
+    width: 200px; /* Increased size */
+    height: 200px;
+    object-fit: contain; /* Ensures the image scales properly */
+    display: block; /* Removes extra spacing */
+    margin: 0 auto; /* Centers the image */
+    max-width: 100%; /* Prevents overflow */
+  }
+  th: 100%; /* Prevents overflow */
+}
+
+/* Student Events */
+.student-events {
+    background: #333;
+    color: white;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .student-events h2 {
+    margin-bottom: 20px;
+  }
+  
+  .student-events .event-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Spacing between boxes */
+  }
+  
+  .event-placeholder {
+    background: #666;
+    width: 200px;
+    height: 120px;
+    border-radius: 10px;
+  }
+  
+/* Upcoming Events */
+.upcoming-events {
+  padding: 40px 0;
+}
+/* EVENTS SECTION */
+.events {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  /* ✅ FLEX to Align Image & Card Horizontally */
+  .event-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* ✅ Ensures proper spacing */
+    padding-top: 50px;
+  }
+  
+  /* ✅ Image Fix */
+  .event-img img {
+    width: 220px; /* ✅ Increased Size */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* ✅ Event Card Fix */
+  .event-card {
+    background: linear-gradient(135deg, #e9d7f9, #f5ebfb);
+    padding: 20px 30px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    width: 55%;
+    max-width: 450px;
+  }
+  
+  /* ✅ Text Adjustments */
+  .event-info h3 {
+    font-size: 1.5rem;
+    color: #000;
+  }
+  
+  .event-info p {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .event-info a {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: blue;
+    text-decoration: none;
+    border-bottom: 2px solid blue;
+  }
+  
+
+/* Officers */
+.officers {
+  padding: 40px 0;
+}
+
+.officer-placeholder {
+  background: lightgray;
+  width: 300px;
+  height: 150px;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+  background: black;
+  color: white;
+  padding: 20px;
+}
+
+.footer-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-box {
+  background: #222;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
